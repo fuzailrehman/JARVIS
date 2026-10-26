@@ -331,8 +331,7 @@ def listen():
             # ۱۰ سیکنڈ کا ٹائم آؤٹ اور ۱۵ سیکنڈ کی لمبی فریز لمٹ
             audio = recognizer.listen(source, timeout=10, phrase_time_limit=15)
             print("Recognizing...")
-            
-            # en-IN ہماری اردگرد کی بولی اور ایکسینٹ بالکل صحیح پکڑتا ہے
+            ہماری اردگرد کی بولی اور ایکسینٹ بالکل صحیح پکڑتا ہے
             query = recognizer.recognize_google(audio, language='en-IN')
             print(f"You: {query}")
             return query.lower()
